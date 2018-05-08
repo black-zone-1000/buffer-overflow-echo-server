@@ -9,6 +9,11 @@
 #define BUFFER_SIZE 1024
 #define on_error(...) { fprintf(stderr, __VA_ARGS__); fflush(stderr); exit(1); }
 
+void win(){
+	printf("\nYou win!\n");
+	exit(0);
+}
+
 
 void doit(char* buf){
 	char dst[10];
